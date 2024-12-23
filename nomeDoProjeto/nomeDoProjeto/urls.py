@@ -20,6 +20,7 @@ from django.urls import include, path
 from home import views as homeViews
 from blog import views as blogViews
 
+# http://127.0.0.1:8000/
 urlpatterns = [
     path('', include('home.urls')),
     path('blog/', include('blog.urls')),
