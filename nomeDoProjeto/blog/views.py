@@ -3,11 +3,11 @@ from blog.data import posts
 #from django.shortcuts import render
 
 # Create your views here.
-def home(request):
-    print('blog')
+def home(request, id):
+    print('post', id)
 
     context = {
-        'text': 'Olá blog',
+        #'text': 'Olá blog',
         'posts': posts
     }
 
